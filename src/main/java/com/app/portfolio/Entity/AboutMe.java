@@ -1,5 +1,6 @@
 package com.app.portfolio.Entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -11,8 +12,10 @@ public class AboutMe {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    @Column(columnDefinition = "TEXT")
     private String imagenMi;
     private String nombreAbout;
+    @Column(columnDefinition = "TEXT")
     private String descripcionAbout;
 
     public AboutMe() {

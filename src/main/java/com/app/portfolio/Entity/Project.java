@@ -4,6 +4,7 @@
  */
 package com.app.portfolio.Entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -15,14 +16,17 @@ import javax.persistence.Id;
  */
 @Entity
 public class Project {
-@Id
-@GeneratedValue(strategy = GenerationType.IDENTITY)
-private int id;
-private String nombreProj;
-private String descripcionProj;
-private String fechaInicioProj;
-private String fechaFinProj;
-private String imgProj;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+    private String nombreProj;
+    private String descripcionProj;
+    private String fechaInicioProj;
+    private String fechaFinProj;
+    @Column(columnDefinition = "TEXT")
+    private String imgProj;
+    private String linkProj;
 
     public Project() {
     }
@@ -80,6 +84,12 @@ private String imgProj;
         this.imgProj = imgProj;
     }
 
+    public String getLinkProj() {
+        return linkProj;
+    }
 
+    public void setLinkProj(String linkProj) {
+        this.linkProj = linkProj;
+    }
 
 }

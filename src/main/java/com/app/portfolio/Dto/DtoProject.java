@@ -11,18 +11,21 @@ import javax.validation.constraints.NotBlank;
  * @author suble
  */
 public class DtoProject {
-@NotBlank
-private int id;
-@NotBlank
-private String nombreProj;
-@NotBlank
-private String descripcionProj;
-@NotBlank
-private String fechaInicioProj;
-@NotBlank
-private String fechaFinProj;
 
-private String imgProj;
+    @NotBlank
+    private int id;
+    @NotBlank
+    private String nombreProj;
+    @NotBlank
+    private String descripcionProj;
+    @NotBlank
+    private String fechaInicioProj;
+    @NotBlank
+    private String fechaFinProj;
+
+    private String imgProj;
+
+    private String linkProj;
 
     public DtoProject() {
     }
@@ -79,5 +82,13 @@ private String imgProj;
     public void setImgProj(String imgProj) {
         this.imgProj = imgProj;
     }
-    
+
+    public String getLinkProj() {
+        return linkProj;
+    }
+
+    public void setLinkProj(String linkProj) {
+        this.linkProj = linkProj;
+    }
+
 }

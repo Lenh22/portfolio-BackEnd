@@ -53,7 +53,8 @@ public class SkillController {
         Skill skill = new Skill();
 
         skill.setNombreHab(dtoSkill.getNombreHab());
-        skill.setNivelHab(dtoSkill.getNivelHab());
+        String styleNivel = "width:" + dtoSkill.getNivelHab() + "%;"; //guardamos asi en la BD
+        skill.setNivelHab(styleNivel);
         skill.setImgHab(dtoSkill.getImgHab());
 
         skillService.save(skill);

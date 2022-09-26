@@ -1,5 +1,6 @@
 package com.app.portfolio.Entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -15,7 +16,8 @@ public class Education {
     private String fechaInicio;
     private String fechaFin;
     private String aprobadasEdu;
-    private String promedio; 
+    private String promedio;
+    @Column(columnDefinition = "TEXT")
     private String imagen;
     
 

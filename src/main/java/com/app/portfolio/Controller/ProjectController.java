@@ -58,6 +58,7 @@ public class ProjectController {
         project.setDescripcionProj(dtoProject.getDescripcionProj());
         project.setFechaInicioProj(dtoProject.getFechaInicioProj());
         project.setFechaFinProj(dtoProject.getFechaFinProj());
+        project.setLinkProj(dtoProject.getLinkProj());
         if(dtoProject.getImgProj().isEmpty() || dtoProject.getImgProj().isBlank()){
             dtoProject.setImgProj("nubeG.png");
         }
@@ -86,6 +87,7 @@ public class ProjectController {
         project.setDescripcionProj(dtoProject.getDescripcionProj());
         project.setFechaInicioProj(dtoProject.getFechaInicioProj());
         project.setFechaFinProj(dtoProject.getFechaFinProj());
+        project.setLinkProj(dtoProject.getLinkProj());
         if(dtoProject.getImgProj().isEmpty()|| dtoProject.getImgProj().isBlank()){
             dtoProject.setImgProj("nubeG.png");
         }
