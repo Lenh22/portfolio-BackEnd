@@ -36,7 +36,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/auth")
 //@CrossOrigin
-@CrossOrigin(origins = "https://ftend-porfolio.web.app") 
+@CrossOrigin(origins = "https://ftend-porfolio.web.app")
+
 public class AuthController {
 /*EL ERROR (VIDEO DE AUTH 1:20:00 hr
     Field passwordEncoder in com.app.portfolio.Security.Controller.AuthController required a bean of type 
