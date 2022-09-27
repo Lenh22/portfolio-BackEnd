@@ -43,7 +43,7 @@ public class AboutMeController {
 
     @PostMapping("/create")
     public ResponseEntity<?> create(@RequestBody DtoAboutMe dtoAboutMe) {
-        if (StringUtils.isBlank(dtoAboutMe.getNombre())) {
+        if (dtoAboutMe.getNombre()==null || dtoAboutMe.getNombre().trim().length()==0) {
             return new ResponseEntity(new Mensaje("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);
         }
         if (aboutMeService.existsByNombreAbout(dtoAboutMe.getNombre())) {
@@ -54,7 +54,7 @@ public class AboutMeController {
 
         aboutMe.setNombre(dtoAboutMe.getNombre());
         aboutMe.setDescripcion(dtoAboutMe.getDescripcion());
-        if (dtoAboutMe.getImagenMi().isEmpty() || dtoAboutMe.getImagenMi().isBlank()) {
+        if (dtoAboutMe.getImagenMi().isEmpty() || dtoAboutMe.getImagenMi().trim().length()==0) {
             dtoAboutMe.setImagenMi("perfil.jpg");
         }
         aboutMe.setImagenMi(dtoAboutMe.getImagenMi());
@@ -71,7 +71,7 @@ public class AboutMeController {
         if (aboutMeService.existsByNombreAbout(dtoAboutMe.getNombre()) && aboutMeService.getByNombreAbout(dtoAboutMe.getNombre()).get().getId() != id) {
             return new ResponseEntity(new Mensaje("Esa persona ya existe"), HttpStatus.BAD_REQUEST);
         }
-        if (StringUtils.isBlank(dtoAboutMe.getNombre())) {
+        if (dtoAboutMe.getNombre()==null || dtoAboutMe.getNombre().trim().length()==0) {
             return new ResponseEntity(new Mensaje("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);
         }
 
@@ -79,7 +79,7 @@ public class AboutMeController {
 
         aboutMe.setNombre(dtoAboutMe.getNombre());
         aboutMe.setDescripcion(dtoAboutMe.getDescripcion());
-        if (dtoAboutMe.getImagenMi().isEmpty() || dtoAboutMe.getImagenMi().isBlank()) {
+        if (dtoAboutMe.getImagenMi().isEmpty() || dtoAboutMe.getImagenMi().trim().length()==0) {
             dtoAboutMe.setImagenMi("perfil.jpg");
         }
         aboutMe.setImagenMi(dtoAboutMe.getImagenMi());
