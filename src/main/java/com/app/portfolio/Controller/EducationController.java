@@ -59,7 +59,7 @@ public class EducationController {
         education.setFechaFin(dtoEducation.getFechaFin());
         education.setAprobadasEdu(dtoEducation.getAprobadasEdu());
         education.setPromedio(dtoEducation.getPromedio());
-        if (dtoEducation.getImagen().isEmpty()|| dtoEducation.getImagen().isBlank()) {
+        if (dtoEducation.getImagen().isEmpty()) {
             dtoEducation.setImagen("nubeG.png");
         }
         education.setImagen(dtoEducation.getImagen());
@@ -90,7 +90,7 @@ public class EducationController {
         education.setFechaFin(dtoEducation.getFechaFin());
         education.setAprobadasEdu(dtoEducation.getAprobadasEdu());
         education.setPromedio(dtoEducation.getPromedio());
-        if (dtoEducation.getImagen().isEmpty()|| dtoEducation.getImagen().isBlank()) {
+        if (dtoEducation.getImagen().isEmpty()) {
             dtoEducation.setImagen("nubeG.png");
         }
         education.setImagen(dtoEducation.getImagen());
