@@ -12,7 +12,7 @@ public class AboutMe {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    @Column(columnDefinition = "TEXT")
+    @Column(columnDefinition = "MEDIUMTEXT")
     private String imagenMi;
     private String nombreAbout;
     @Column(columnDefinition = "TEXT")

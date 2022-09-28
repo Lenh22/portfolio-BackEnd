@@ -17,7 +17,7 @@ public class Education {
     private String fechaFin;
     private String aprobadasEdu;
     private String promedio;
-    @Column(columnDefinition = "TEXT")
+    @Column(columnDefinition = "MEDIUMTEXT")
     private String imagen;
     
 

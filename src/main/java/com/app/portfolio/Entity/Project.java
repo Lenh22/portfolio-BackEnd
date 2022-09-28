@@ -24,7 +24,7 @@ public class Project {
     private String descripcionProj;
     private String fechaInicioProj;
     private String fechaFinProj;
-    @Column(columnDefinition = "TEXT")
+    @Column(columnDefinition = "MEDIUMTEXT")
     private String imgProj;
     private String linkProj;
 
