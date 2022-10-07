@@ -55,7 +55,7 @@ public class AboutMeController {
         aboutMe.setNombre(dtoAboutMe.getNombre());
         aboutMe.setDescripcion(dtoAboutMe.getDescripcion());
         if (dtoAboutMe.getImagenMi().isEmpty() || dtoAboutMe.getImagenMi().trim().length()==0) {
-            dtoAboutMe.setImagenMi("perfil.jpg");
+            dtoAboutMe.setImagenMi("");
         }
         aboutMe.setImagenMi(dtoAboutMe.getImagenMi());
 

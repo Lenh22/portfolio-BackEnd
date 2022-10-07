@@ -60,7 +60,7 @@ public class EducationController {
         education.setAprobadasEdu(dtoEducation.getAprobadasEdu());
         education.setPromedio(dtoEducation.getPromedio());
         if (dtoEducation.getImagen().isEmpty()) {
-            dtoEducation.setImagen("nubeG.png");
+            dtoEducation.setImagen("");
         }
         education.setImagen(dtoEducation.getImagen());
 

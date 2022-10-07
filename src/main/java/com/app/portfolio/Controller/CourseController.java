@@ -48,7 +48,7 @@ public class CourseController {
         if (StringUtils.isBlank(dtoCourse.getNombreCurso())) {
             return new ResponseEntity(new Mensaje("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);
         }
-        if (courseService.existsByNombreCourse(dtoCourse.getNombreCurso())) {
+        if (courseService.existsByNombreCourse(dtoCourse.getNombreCurso()) && courseService.existsByTituloCurso(dtoCourse.getTituloCurso())) {
             return new ResponseEntity(new Mensaje("El curso ya existe"), HttpStatus.BAD_REQUEST);
         }
 

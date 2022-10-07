@@ -4,7 +4,6 @@
  */
 package com.app.portfolio.Service;
 
-
 import com.app.portfolio.Entity.Course;
 import com.app.portfolio.Repository.ICourseRepository;
 import java.util.List;
@@ -20,8 +19,9 @@ import org.springframework.stereotype.Service;
 @Service
 @Transactional
 public class CourseService {
+
     @Autowired
-    ICourseRepository iCourseRepository ;
+    ICourseRepository iCourseRepository;
 
     public List<Course> list() {
         return iCourseRepository.findAll();
@@ -33,6 +33,10 @@ public class CourseService {
 
     public Optional<Course> getByNombreCourse(String nombre) {
         return iCourseRepository.findByNombreCurso(nombre);
+    }
+
+    public Optional<Course> getByTituloCourse(String titulo) {
+        return iCourseRepository.findByTituloCurso(titulo);
     }
 
     public void save(Course exp) {
@@ -49,5 +53,8 @@ public class CourseService {
 
     public boolean existsByNombreCourse(String nombre) {
         return iCourseRepository.existsByNombreCurso(nombre);
+    }
+     public boolean existsByTituloCurso(String titulo) {
+        return iCourseRepository.existsByTituloCurso(titulo);
     }
 }

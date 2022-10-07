@@ -61,7 +61,7 @@ public class ProjectController {
         project.setFechaFinProj(dtoProject.getFechaFinProj());
         project.setLinkProj(dtoProject.getLinkProj());
         if(dtoProject.getImgProj().isEmpty()){
-            dtoProject.setImgProj("nubeG.png");
+            dtoProject.setImgProj("");
         }
         
         project.setImgProj(dtoProject.getImgProj());
