@@ -10,4 +10,5 @@ Hay implementaciones como por ejemplo:
 - MVC
 - CRUD (Create, Read, Update, Delete)
 - JWT
+- Swagger:  _http://localhost:8080/swagger-ui/index.html_ (Una vez ejecutado)
 
