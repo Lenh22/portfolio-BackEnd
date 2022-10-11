@@ -10,5 +10,5 @@ Hay implementaciones como por ejemplo:
 - MVC
 - CRUD (Create, Read, Update, Delete)
 - JWT
-- Swagger:  _http://localhost:8080/swagger-ui/index.html_ (Una vez ejecutado)
+- Swagger:  _http://localhost:8080/swagger-ui/index.html_ (Una vez ejecutado) ó _https://bkend-portfolio.herokuapp.com/swagger-ui/index.html_
 
