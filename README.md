@@ -4,12 +4,14 @@ Esta parte contiene el **Back-End** del portfolio hecho con
 - Java
 - SpringBoot
 
+El Back End esta subido a **Azure**, su BD esta en **Clever Cloud**
+
 _Con integraciones vistas en la parte teorica como practica desde el Modulo 1 hasta el Modulo 9_
 
 Hay implementaciones como por ejemplo:
 - MVC
 - CRUD (Create, Read, Update, Delete)
 - JWT
-- Swagger:  _http://localhost:8080/swagger-ui/index.html_ (Una vez ejecutado) ó _https://bkend-portfolio.herokuapp.com/swagger-ui/index.html_
+- Swagger: _https://pf-backend.azurewebsites.net/swagger-ui/index.html_
 
 
