@@ -12,6 +12,5 @@ Hay implementaciones como por ejemplo:
 - MVC
 - CRUD (Create, Read, Update, Delete)
 - JWT
-- Swagger: _https://pf-backend.azurewebsites.net/swagger-ui/index.html_
 
 
